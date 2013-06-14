@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- disable iPhone inital scale -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Brentney Powell Examples</title>
+<!-- main css -->
+<link href="style2.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="val.js"> </script>
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="pagewrap">
+	<header id="header">
+		<nav>
+			<ul id="main-nav" class="clearfix">
+				<li><a href="final.html">Page 1</a></li>
+				<li><a href="exampleB.html">Page 2</a></li>
+			</ul>
+			<!-- /#main-nav --> 
+		</nav>
+		<form id="searchform">
+			<input type="search" id="s" placeholder="Search">
+		</form>
+	</header>
+	<!-- /#header -->
+	<div id="content">
+		<article class="post clearfix">
+			<header>
+				<h1 class="post-title"><a href="#">Example #2</a></h1>
+			</header>
+			<figure class="post-image"> 
+				<img src="images/new.png" /> 
+			</figure>
+			<div id="contact-area">
+			<form action="#" class="cleanForm" method="POST" onsubmit='return formValidator()'>
+    	<fieldset>
+        <label><input type="text" name="FNamee" placeholder="First Name" id="FName" required>
+        First Name</label>
+        <label><input type="text" name="LName" placeholder="Last Name" id="LName" required>
+        Last Name</label>
+        <label><input type="text" name="City"  placeholder="City" id="City" required>
+        City</label>
+        <label><input type="text" name="Phone" placeholder="Phone" id="Phone" required>
+        Phone</label>
+        <label><input type="text" name="Email" placeholder="Email" id="Email" required>
+        Email</label>
+        <label><input type="text" name="password" placeholder="Password" id="Password" required>
+        Enter password</label>
+        <div id="gender">
+            <label><input type="radio" name="gender" value="Female" checked>
+            Female</label>
+            <label><input type="radio" name="gender" value="Male">
+            Male</label>
+        </div>
+        <label class="tos"><input type="checkbox" id="agree-TOS">
+        I agree that this is valid information</label>
+    </fieldset>
+    <button type="submit">Submit</button>
+</form>
+			<div style="clear: both;"></div>	
+		</div>
+		</article>
+	<!-- /.post -->
+	</div>
+	<!-- /#content --> 
+	<aside id="sidebar">
+		<section class="widget">
+			<h2 class="widgettitle">Sidebar</h2>
+			<p>My name is Brentney Powell and this is just a sample html/css page for you to take a look at.</P>
+		</section>
+		<!-- /.widget -->
+		<section class="widget clearfix">
+			<h2 class="widgettitle">Pop Up</h2>
+			<input type="button" onClick="popup()" value="Pop Up Box!">
+		</section>
+		<!-- /.widget -->				
+	</aside>
+	<!-- /#sidebar -->
+	<footer id="footer">
+		<p>Brentney Powell</a></p>
+	</footer>
+	<!-- /#footer --> 
+</div>
+<!-- /#pagewrap -->
+</body>
+</html>
