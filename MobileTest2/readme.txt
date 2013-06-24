@@ -9,5 +9,8 @@ a popup box/confirmation box.
 according to screen size. The orginal layout (background) was produced via an online 
 tutorial. I add the images, forms, pop ups, and additional javascript functions.
 
-Brentney Powell
+***Update I've include one last html page along with a .php file.
+
+
+-Brentney Powell
 

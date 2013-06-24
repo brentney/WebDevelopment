@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* set image max width to 100% */
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+@font-face {
+    font-family: 'PressBoard'; /*a name to be used later*/
+    src: url('font/PressboardRegular.ttf'); /*URL to font*/
+}
+@font-face {
+	font-family: 'acmesai'; /*a name to be used later*/
+    src: url('font/acmesai.ttf'); /*URL to font*/
+}
+html { 
+  background: url(images/redlights.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+body{
+	/* Workaround for some mobile browsers */
+	min-height:100%;
+}
+
+h1 {font-size:500%; color: #fff; font-family: 'PressBoard'; text-align: center; padding-top: 5%;}
+h2 {font-size:1vw; color: #fff; text-align: center; padding-top: 1%;}
+h3 {font-size:200%; color: #fff;font-family: 'PressBoard'; }
+#wrapper {
+ width:900px; position:relative; margin:0 auto; height:1200px;
+ padding:0;
+  background-color:#FFF;
+  color: #333;
+  position:relative;
+}
+#Title{
+	width: 900px;
+	height:300px;
+	background: #000;
+	/*background: url(images/bg1.jpg);*/
+	height:15%;
+	padding: 0;
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	}
+#bottom{
+	width: 100%;
+	background: #000;
+	height:3%;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	z-index: 100;
+	}
+#image1  
+{   
+  	background-image:url(images/tree.jpg);
+	background-repeat: no-repeat;
+   	width: 200px;
+	height: 200px;
+	position: absolute;
+	margin: 10px 72px;
+	padding: 0;
+	z-index: 100;
+	list-style:none;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}   
+
+#image2  
+{   
+ 	background-image:url(images/red.jpg);
+	background-repeat: no-repeat;
+   	width: 200px;
+	height: 200px;
+	padding: 0;
+	position: absolute;
+	margin:240px 72px;
+	z-index: 100;
+	list-style:none;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+#image3  
+{   
+ 	background-image:url(images/water.jpg);
+	background-repeat: no-repeat;
+   	width: 200px;
+	height: 200px;
+	padding: 0;
+	position: absolute;
+	margin:470px 72px;
+	z-index: 100;
+	list-style:none;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+hr.vertical
+{
+   width: 0;
+   height: 99%; /* or height in PX */
+   position:absolute;
+   z-index:9;
+   background-color: #000;
+   margin: 0 70%;
+   top:0;
+	left: 0;
+	bottom: 0;
+	padding: 0;
+	overflow:hidden;
+} 
+hr.horizontal
+{
+   width: 269px;
+   height: 0; /* or height in PX */
+   position:absolute;
+   z-index:999;
+   background-color: #000;
+   margin: 913px 630px;
+   top:0;
+	left: 0;
+	bottom: 0;
+	padding: 0;
+	overflow:hidden;
+} 
+hr.horizontal2
+{
+   width: 630px;
+   height: 0; /* or height in PX */
+   position:absolute;
+   z-index:999;
+   background-color: #000;
+   margin: 1120px 0;
+   top:0;
+	left: 0;
+	bottom: 0;
+	padding: 0;
+	overflow:hidden;
+} 
+#imagewrap{
+ clear: none;
+ margin: 0 66%;
+ z-index:-99;
+ bottom: 50%;
+}
+p{
+ float: left;
+ clear: none;
+ margin: 25% 5%;
+ color: #000;
+ z-index:100;
+ width: 60%;
+font-family:'acmesai'; 
+font-size:100%;
+ -moz-box-shadow: 0 0 3px 3px #888;
+-webkit-box-shadow: 0 0 3px 3px#888;
+box-shadow: 0 0 3px 3px #888;
+}
+.pmarg{padding:5px 0 5px 5px;}
+#navigation ul {
+position:absolute;
+padding:0 80px 0% 200px;
+bottom: 50px;
+}
+a {
+text-decoration:none;
+font-family: 'CREABBRG';
+}
+#navigation li {
+display: inline;
+position:relative;
+z-index:9999;
+}
+#navigation a{
+color:#000000;
+}
+ footer li:after                
+    { 
+	content:" |"   
+    }  
+#login
+{
+	z-index:50;
+	position:absolute;
+	margin:740px 72px;
+	padding:5px 0 0 5px;
+	width:190px;
+	height: 180px;	
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top,  #a90329 0%, #ce0422 44%, #bf0326 58%, #9b0000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#ce0422), color-stop(58%,#bf0326), color-stop(100%,#9b0000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a90329 0%,#ce0422 44%,#bf0326 58%,#9b0000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a90329 0%,#ce0422 44%,#bf0326 58%,#9b0000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a90329 0%,#ce0422 44%,#bf0326 58%,#9b0000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #a90329 0%,#ce0422 44%,#bf0326 58%,#9b0000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#9b0000',GradientType=0 ); /* IE6-9 */
+-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+#login a{
+color:#ffffff;
+font-size:12pt;
+}
+#login input[type="text"]{
+display:block;
+margin-top:3%;
+margin-bottom:5%;
+}
+#login input{
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+	font-size:80%;
+	}
+
+
+.contact li
+{
+	width:80%;
+	margin: 0 0 0 5%;
+}
+
+form ul
+{
+	font-size:100%;
+	list-style-type:none;
+	margin: 30% 3%;
+	padding:0;
+	width:100%;
+	position:absolute;
+}
+
+form li
+{
+	display:block;
+	margin:0;
+	padding:4px 5px 2px 9px;
+	position:relative;
+}
+
+form li:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+
+form li div
+{
+	color:#444;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+form li span
+{
+	color:#444;
+	float:left;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+form li div.left
+{
+	display:inline;
+	float:left;
+	width:48%;
+}
+
+form li div.
+{
+	display:inline;
+	float:right;
+	width:48%;
+}
+
+form li div.left .medium
+{
+	width:100%;
+}
+
+form li div.right .medium
+{
+	width:100%;
+}
+
+.clear
+{
+	clear:both;
+}
+
+form li div label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:12px;
+	line-height:12px;
+	margin:0;
+	padding-top:3px;
+}
+
+form li span label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:12px;
+	line-height:12px;
+	margin:0;
+	padding-top:3px;
+}
+
+/**** Inputs and Labels ****/
+label.description
+{
+	border:none;
+	color:#222;
+	display:block;
+	font-size:95%;
+	font-weight:700;
+	line-height:150%;
+	padding:0 0 1px;
+}
