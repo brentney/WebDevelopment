@@ -1,31 +1,20 @@
-<?php
-    // Grab our POSTed form values
-    // Note that whatever is enclosed by $_POST[""] matches the form input elements
-    $contactName = $_POST["ContactName"];
-    $contactEmail = $_POST["ContactEmail"];
-    $contactLeastFavoriteColor = $_POST["ContactLeastFavoriteColor"];
+<?
+//contactform.php
+mysql_connect("localhost","root","admin");//database connection
+mysql_select_db("example");
 
-    // Connect to our DB with mysql_connect(<server>, <username>, <password>)
-    $sql_connection = mysql_connect("localhost", "root", "root");
+//inserting data order
+$order = "INSERT INTO sample_example
+			(FName, LName, Phone, Email, Address, City)
+			VALUES
+			('$FName',
+			'$LName','$Phone','$Email','$Address','$City')";
 
-    mysql_select_db("MyRadContactForm", $sql_connection);
-
-    // Probably should check to make sure the connection was successful
-    // But I'm too lazy...
-    $sql = "INSERT INTO MyRadContacts (
-                ContactName,
-                ContactEmail,
-                ContactLeastFavoriteColor,
-                ContactDateCreated
-            )
-            VALUES (
-                '$contactName',
-                '$contactEmail',
-                '$contactLeastFavoriteColor',
-                NOW()
-            )";
-
-    mysql_query($sql, $sql_connection);
-
-    mysql_close($sql_connection);
+//declare in the order variable
+$result = mysql_query($order);	//order executes
+if($result){
+	echo("<br>Input data is succeed");
+} else{
+	echo("<br>Input data is fail");
+}
 ?>
